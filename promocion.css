@@ -1,0 +1,254 @@
+/* --- Fuentes y Estilos Generales --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2c804f; /* Verde oliva del fondo */
+}
+
+/* --- Cabecera y Navegación --- */
+header {
+    background-color: #0d2c4e; /* Azul oscuro del header */
+    padding: 1rem 2rem;
+}
+
+.brand-logo {
+    color: #f39c12; /* Naranja para el logo */
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.8rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* --- Contenido Principal y Promoción --- */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.promo-container {
+    max-width: 1000px;
+    width: 100%;
+    /* URL de imagen de fondo de calle borrosa para simular el original */
+    background: url('https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center center/cover;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --- Títulos de la Promoción --- */
+.promo-header {
+    text-align: center;
+    color: #e60023; /* Rojo intenso */
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+
+.promo-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.promo-header .main-title {
+    font-size: clamp(3rem, 7vw, 5rem);
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    line-height: 1;
+}
+
+/* --- Cuerpo de la Promoción (Bus y Detalles) --- */
+.promo-body {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+    justify-content: center;
+}
+
+.bus-container {
+    flex: 1 1 400px; /* Permite que el bus ocupe espacio y se ajuste */
+}
+
+.bus-container img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3)); /* Sombra suave para el bus */
+}
+
+.details-section {
+    flex: 1 1 300px; /* Permite que la caja de detalles ocupe espacio */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.details-box {
+    background-color: #e60023;
+    color: white;
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.details-box .title-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.details-box .stops {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.details-box .arrows {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.arrows .destination-pretext {
+    font-size: 0.7rem;
+    align-self: flex-end; /* Alinea con la parte inferior de las flechas */
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.details-box .destination {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+.details-box .destination strong {
+    font-size: 1.2rem;
+}
+
+.details-box .additional-info {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.validity-box {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* --- Pie de la Promoción (Social) --- */
+.promo-footer {
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 550px;
+    margin: 2rem auto 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #e60023;
+    font-size: 1.1rem;
+}
+
+.footer-brand .fa-bus-simple {
+    font-size: 2rem;
+}
+
+.separator {
+    width: 2px;
+    height: 30px;
+    background-color: #ddd;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: #222;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #e60023;
+}
+
+/* --- Media Queries para Responsividad --- */
+@media (max-width: 992px) {
+    .promo-body {
+        flex-direction: column; /* Apila el bus y los detalles en pantallas medianas/pequeñas */
+        align-items: center;
+    }
+
+    .bus-container {
+        max-width: 450px;
+    }
+    
+    .details-section {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none; /* Oculta los links de navegación en móvil */
+    }
+
+    .promo-footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .separator {
+        width: 80%;
+        height: 2px;
+    }
+}

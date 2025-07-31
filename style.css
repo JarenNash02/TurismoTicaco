@@ -1,0 +1,244 @@
+/*--------------------------------------------------------------
+# General Styling
+--------------------------------------------------------------*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'roboto', Times, serif;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0d2c4e; /* Un azul oscuro, como en la imagen */
+}
+
+/*--------------------------------------------------------------
+# Header / Navbar
+--------------------------------------------------------------*/
+.navbar {
+    background-color: rgba(33, 37, 41, 0.9) !important;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero-section {
+    background: url(/IMG/hero-bg.jpg.jpg) no-repeat center center; /* Reemplaza 'hero-bg.jpg' con tu imagen */
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    padding-top: 80px; /* Espacio para el navbar fijo */
+}
+
+/* Overlay oscuro para mejorar legibilidad del texto */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative; /* Para que esté por encima del overlay */
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada de Google Fonts */
+    font-size: 2rem;
+    line-height: 1.5;
+    text-shadow: 
+        3px 3px 0px #00aeff, /* Sombra azul para el efecto de borde */
+        -3px -3px 0px #00aeff,
+        3px -3px 0px #00aeff,
+        -3px 3px 0px #00aeff;
+}
+
+.hero-btn {
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Destinations Section
+--------------------------------------------------------------*/
+.destination-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Info Box (Objetivos y Por qué elegirnos)
+--------------------------------------------------------------*/
+.info-box {
+    border: 1px solid #ccc;
+    padding: 30px;
+    height: 100%;
+    background-color: white;
+}
+
+.info-box .box-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0d2c4e;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-box ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.info-box ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffc107; /* Color del bullet point */
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/*--------------------------------------------------------------
+# Quote Section / Footer
+--------------------------------------------------------------*/
+.quote-section {
+    background-color: #0d2c4e; /* Azul oscuro del fondo */
+    color: #fff;
+}
+
+.quote-section .form-label {
+    color: #ffc107; /* Amarillo para las etiquetas */
+    font-weight: 500;
+}
+
+.quote-section .form-control {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.quote-section .form-check-label {
+    color: #fff;
+}
+
+.logo-img {
+    max-width: 300px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+}
+
+.social-icons .social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    color: #0d2c4e;
+    background-color: #ffc107; /* Fondo amarillo para los iconos */
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.social-icons .social-link:hover {
+    transform: scale(1.1);
+}
+
+
+.footer {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  padding: 40px 0 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footer-column h4 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffcc00;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}

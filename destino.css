@@ -1,0 +1,70 @@
+/* Importar y aplicar Google Font */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #0d2c4e;
+}
+
+/* ======== Estilos de la barra de navegación (Header) ======== */
+.bg-dark-custom {
+    background-color: #0d2c4e; /* Un color oscuro estándar de Bootstrap */
+}
+
+.logo {
+    color: #E58D27 !important; /* Color naranja para el logo */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f8f9fa !important; /* Texto blanco para los enlaces */
+    margin: 0 10px;
+}
+
+.nav-link.active {
+    font-weight: bold; /* Hacer el enlace activo más notorio */
+}
+
+/* ======== Estilos del Contenido Principal ======== */
+h1, h2, h3 {
+    color: #212529; /* Títulos con color oscuro */
+}
+
+/* Espaciado entre las secciones de destinos */
+.destination-item {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Botón "Learn More" */
+.btn-learn-more {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    color: #555;
+    border-radius: 50px; /* Bordes totalmente redondeados */
+    transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    transform: translateY(-2px); /* Pequeño efecto al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Imágenes de los destinos */
+.rounded-custom {
+    border-radius: 15px; /* Bordes redondeados personalizados */
+}
+
+/* ======== Responsividad ======== */
+/* En pantallas pequeñas, centrar el texto de los destinos */
+@media (max-width: 767px) {
+    .destination-item .col-md-6 {
+        text-align: center;
+    }
+}

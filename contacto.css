@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #0d2c4e;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Header */
+.main-nav {
+    background-color: #0d2c4e;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    color: #F39C12 !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.main-nav .nav-link {
+    color: #ECF0F1;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-nav .nav-link.active {
+    color: #FFFFFF;
+}
+
+/* Sub Header */
+.sub-header {
+    background-color: #FFFFFF;
+    padding: 1rem 0;
+    border-bottom: 1px solid #EAECEF;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #2E3B4E;
+}
+
+/* Main Content */
+.contacts-title {
+    font-weight: 700;
+    color: #2E3B4E;
+    margin-bottom: 1rem;
+}
+
+.controls-bar .search-container {
+    position: relative;
+}
+
+.controls-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A0A9B8;
+}
+
+.controls-bar .search-input {
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 10px;
+    padding-left: 40px;
+    height: 45px;
+}
+
+.controls-bar .search-input:focus {
+    background-color: #EAECEF;
+    box-shadow: none;
+    border: none;
+}
+
+.action-buttons .add-btn {
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    color: #556278;
+    line-height: 1;
+}
+
+.action-buttons .profile-avatar-top {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.new-contact-btn {
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #8A95A5;
+    padding: 0.4rem 1rem;
+}
+
+/* Contact List */
+.contact-list .contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #EAECEF;
+}
+
+.contact-info h5 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #2E3B4E;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #8A95A5;
+    font-size: 0.9rem;
+}
+
+.contact-avatar img {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}

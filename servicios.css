@@ -1,0 +1,150 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #0d2c4e;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0d2c4e;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand {
+    color: #E89F3A !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #E89F3A !important;
+}
+
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/IMG/Logo\ Logotipo\ Marca\ Personal\ Negocio\ Sencillo\ Rosa.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 100px; /* Space for fixed navbar */
+}
+
+/* Custom Button Styles */
+.btn-book {
+    background-color: #A9BCD0;
+    border-color: #A9BCD0;
+    color: #2b3035;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-book:hover {
+    background-color: #92a5b8;
+    border-color: #92a5b8;
+    color: #2b3035;
+}
+
+/* Section Title */
+.section-title {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #ffffff;
+}
+
+.service-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.service-icon i {
+    font-size: 2.5rem;
+    color: #555;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #2b3035;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+.contact-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+}
+
+.contact-icon-wrapper i {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #ffffff;
+    color: #6c757d;
+}
+
+.footer-link {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #E89F3A;
+}
+
+.footer-divider {
+    border-color: #e9ecef;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+}
